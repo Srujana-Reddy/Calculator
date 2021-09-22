@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter name of the employee");
+		String Name=sc.next();
+		System.out.println("Enter base pay of the employee");
+		float Base_Pay=sc.nextFloat();
+		System.out.println("Enter number of hours worked by the employee");
+		float Hours_Worked=sc.nextFloat();
+		System.out.println("Name :: "+Name);
+		System.out.println("Base pay :: "+Base_Pay+"$");
+		System.out.println("Hours worked :: "+Hours_Worked);
+		if(Hours_Worked<40){
+		    System.out.println("Salary of employee :: "+Base_Pay*Hours_Worked+"$");
+		}
+		if(Hours_Worked>40){
+		    float Extra_Hours_Worked=Hours_Worked-40;
+		    System.out.println("Salary of employee :: "+((Base_Pay*Hours_Worked)*2+(Extra_Hours_Worked*Base_Pay))+"$");
+		}
+	}
+}

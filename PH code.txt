@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter pH Value:");
+		float f=sc.nextFloat();
+		if(f<7){
+		    System.out.println("pH value is low, partial water change required.");
+		}
+		else if(f>=7 && f<=8){
+		    System.out.println("pH value is fine.");
+		}
+		else if(f>8){
+		    System.out.println("pH value is high, partial water change required.");
+		}
+	}
+}
